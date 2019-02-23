@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
     background-image: url("/Users/kate/Desktop/B-Portfolio/assets/images/white_wall.png");
     background-repeat: repeat;
@@ -16,6 +20,7 @@ li {
   }
 
   li a {
+    clear: both;
     display: block;
     text-align: center;
     text-decoration: none;
@@ -40,9 +45,13 @@ li {
     font-size: 24px;
     padding: 26.5px;
     font-weight: bold;
+    float: left;
 }
 a:link, a:visited {
     color: grey;
+}
+a:hover {
+  color: teal;
 }
 .boxed {
     background-color: white;
@@ -50,6 +59,7 @@ a:link, a:visited {
     padding: 25px;
     margin: auto;
     margin-top: 40px;
+    word-wrap: normal;
   }
   h1 {
     font-family: 'Georgia', Times, 'Times New Roman', 'serif';
@@ -66,4 +76,26 @@ a:link, a:visited {
   hr{
     border: 1.5px solid lightgray;
 
+  }
+  .picture {
+    position: relative;
+    width: 250px;
+    height: 187px;
+    margin-bottom: 20px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 30px;
+  }
+
+  .ribbon {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    background-color: teal;
+    font-size: 22px;
+    padding: 23px;
+    text-align: center;
+    width: 250px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 7px;
   }
